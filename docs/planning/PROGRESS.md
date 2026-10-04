@@ -19,7 +19,7 @@
 
 | ID | Target | Status | Actual date | Commit SHA / link | Verification | Deviation / blocker |
 |---|---|---|---|---|---|---|
-| C01 | 05/10 | Done | 04/10 | Current C01 commit (`docs: add technical design, ERD and implementation backlog`) | ERD/API/RBAC/error/backlog cross-review; 24-item traceability preserved; Markdown and link checks passed | Completed one day early; no scope change |
+| C01 | 05/10 | Done | 04/10 | `be4b5fa` — `docs: add technical design, ERD and implementation backlog` | [Scientific AI evidence](../ai-evidence/commits/C01.md); ERD/API/RBAC/error/backlog cross-review; Markdown and link checks passed | Completed one day early; no scope change |
 | C02 | 07/10 | Planned | — | — | — | — |
 | C03 | 10/10 | Planned | — | — | — | — |
 | C04 | 12/10 | Planned | — | — | — | — |

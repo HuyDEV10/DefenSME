@@ -24,7 +24,9 @@ If a specific ID is named, execute that ID only when its prerequisites are compl
 ## During implementation
 
 - Keep the change atomic and within the selected planned item.
-- Add or update migrations, tests, API documentation, and AI evidence when applicable.
+- Create `docs/ai-evidence/commits/Cxx.md` from `PROMPT_TEMPLATE.md` for every planned commit; AI evidence is mandatory, not optional.
+- Preserve the exact prompt, material prompt revisions, AI output summary, corrections, rejected suggestions, verification commands/results, and final human decision.
+- Add or update migrations, tests, API documentation, and other evidence when applicable.
 - Preserve human-in-the-loop and no-autonomous-remediation boundaries.
 - Do not add unrelated roadmap features merely because they are convenient.
 - If the plan is technically invalid, stop before expanding scope and record the proposed change.
@@ -33,6 +35,7 @@ If a specific ID is named, execute that ID only when its prerequisites are compl
 
 - Run every relevant test, lint, build, migration, and security check available.
 - Compare the result with the commit acceptance checkpoint.
+- Validate the Cxx AI evidence against `docs/ai-evidence/EVIDENCE_STANDARD.md`; a missing or vague evidence file blocks `Done`.
 - Update `PROGRESS.md` with status, actual date, evidence, deviations, and next ID.
 - Update the PRD/architecture/traceability only when behavior or decisions changed.
 - Use the planned commit message unless the actual scope requires a more accurate conventional message.
@@ -48,6 +51,7 @@ Report:
 5. GitHub commit link.
 6. Deviations or remaining risks.
 7. The next planned ID.
+8. The committed Cxx AI evidence path.
 
 ## Date and sequence policy
 
@@ -57,4 +61,3 @@ Report:
 - More than three commits in a week is allowed for real fixes or review corrections.
 - Fewer than three is allowed only when blocked or when a planned unit legitimately spans the boundary; record the reason.
 - Never generate empty or cosmetic commits to satisfy cadence.
-

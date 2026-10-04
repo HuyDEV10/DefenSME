@@ -7,6 +7,10 @@
 
 This document is the canonical implementation order. Planned dates are targets, not gates: a commit may be completed earlier or later, but its actual date must be recorded in `PROGRESS.md`. Do not split work artificially to satisfy a commit count.
 
+## Mandatory AI evidence gate
+
+Every C01–C24 implementation commit must add or update `docs/ai-evidence/commits/Cxx.md` using the scientific structure in `EVIDENCE_STANDARD.md` and `PROMPT_TEMPLATE.md`. The record must preserve the exact prompt, grounded inputs, constraints, output summary, failed attempts, verification results, corrections/rejections, and final human decision. Missing evidence blocks the commit from `Done` even when code builds.
+
 ## Schedule
 
 | ID | Target | Commit message | Required work | Acceptance checkpoint |
@@ -55,4 +59,3 @@ This document is the canonical implementation order. Planned dates are targets, 
 | 6 | Dashboard and reviewed reports are usable. |
 | 7 | Security and quality gates pass for a release candidate. |
 | 8 | E2E, course evidence, documentation, and release candidate are complete. |
-

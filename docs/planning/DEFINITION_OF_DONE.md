@@ -17,9 +17,9 @@ The project reaches 100% only when every applicable item is verified:
 - [ ] Docker Compose starts from a clean environment.
 - [ ] Demo accounts and representative data exist.
 - [ ] PRD, architecture, API, test report, user guide, and AI evidence are complete.
+- [ ] Every C01–C24 commit has a complete scientific prompt/evidence record and human decision.
 - [ ] The primary end-to-end demo passes.
 - [ ] No blocker or critical defect remains open.
 - [ ] Tag `v1.0.0` is published by 2026-11-30.
 
 For each checkbox, add evidence to `PROGRESS.md` or the final test report. “Implemented” without verification is not Done.
-

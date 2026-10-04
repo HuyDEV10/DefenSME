@@ -91,6 +91,8 @@ AI output is advisory. DefenSME must display uncertainty, preserve source eviden
 - `docs/architecture/` - architecture decisions and contracts
 - `docs/ai-evidence/` - prompts, reviews, and verification evidence for the course
 
+Every planned C01–C24 commit must include a scientific prompt and human-verification record under [`docs/ai-evidence/commits/`](docs/ai-evidence/commits/README.md). Missing evidence blocks the planned item from `Done`.
+
 ## Continue the development plan
 
 The next implementation task is always identified in [`docs/planning/PROGRESS.md`](docs/planning/PROGRESS.md). Follow [`docs/planning/EXECUTION_PROTOCOL.md`](docs/planning/EXECUTION_PROTOCOL.md) when executing a scheduled commit. Target dates may move; actual dates and verified completion are recorded in the progress tracker.

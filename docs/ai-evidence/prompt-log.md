@@ -1,5 +1,7 @@
 # Prompt log
 
+Detailed per-commit prompts and evaluations are indexed in [`commits/README.md`](commits/README.md). The quality and completeness rules are defined in [`EVIDENCE_STANDARD.md`](EVIDENCE_STANDARD.md).
+
 ## PL-001 — Plan the PRD phase
 
 - **Date:** 2026-10-04
@@ -22,4 +24,3 @@
 - **Intent:** Apply domain constraints and quality gates; reject unsafe or oversized features.
 - **Output:** Review, PRD v1.0, stories, acceptance criteria, and traceability.
 - **Verification:** Compared with existing architecture and AI API boundary; kept assumptions and evidence gaps explicit.
-
