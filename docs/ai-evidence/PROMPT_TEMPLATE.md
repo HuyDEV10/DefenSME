@@ -6,6 +6,7 @@ Copy this file to `docs/ai-evidence/commits/Cxx.md` and replace every bracketed 
 
 - **Planned ID:** `[Cxx]`
 - **Date:** `[YYYY-MM-DD]`
+- **Trigger:** `Scheduled commit request (do not copy the user's short command here)`
 - **Commit message:** `[type(scope): description]`
 - **AI tool/model:** `[Known name/version or “not exposed by tool”]`
 - **Human reviewer:** `[Name or team role]`
@@ -34,7 +35,9 @@ Copy this file to `docs/ai-evidence/commits/Cxx.md` and replace every bracketed 
 
 - `[OPEN QUESTION] ...`
 
-## 4. Exact prompt v1
+## 4. Exact synthesized execution prompt v1
+
+Generate this prompt from the selected commit definition and repository ground truth before implementing. Do not paste a short user instruction such as “Thực hiện Cxx”.
 
 ```text
 ROLE
@@ -101,4 +104,3 @@ Record v2/v3 only when feedback materially changed the output. Explain why each 
 - **Final responsibility:** `[human-controlled result]`
 - **Remaining risks:** `[known limitations]`
 - **Next action:** `[next planned commit or validation]`
-

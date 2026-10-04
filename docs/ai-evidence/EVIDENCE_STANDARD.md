@@ -29,7 +29,9 @@ Each commit record contains all sections below.
 
 ### 4. Exact prompt
 
-- Preserve the prompt verbatim in a fenced block.
+- A short scheduling command such as “Thực hiện C01” is only a trigger and must not be stored or evaluated as the technical prompt.
+- Before implementation, the AI agent must synthesize one complete execution prompt from `DEVELOPMENT_PLAN.md`, `PROGRESS.md`, PRD, architecture, current code, and the selected commit's acceptance checkpoint.
+- Preserve that synthesized execution prompt verbatim in a fenced block. It is the prompt used to guide the complete commit.
 - Include role, objective, context, task, constraints, required output, and verification expectations.
 - If several prompts materially changed the result, preserve each version in chronological order.
 - Never replace the actual prompt with a one-line summary.
@@ -78,10 +80,11 @@ A prompt is acceptable only when it is:
 
 ## Prohibited evidence patterns
 
+- Copying the user's short commit command and presenting it as the implementation prompt.
+- Asking the user to expand a planned commit when the committed roadmap already contains enough scope and acceptance information.
 - “Asked AI to write code” without the actual prompt.
 - Claiming an AI suggestion is correct only because it compiled.
 - Omitting failed prompts, rejected output, or manual corrections.
 - Inventing tool/model names, test results, customer evidence, or performance metrics.
 - Storing secrets, tokens, passwords, raw personal data, or unsafe operational commands.
 - Marking a commit `Done` before evidence and verification are committed.
-

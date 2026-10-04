@@ -9,7 +9,7 @@ This document is the canonical implementation order. Planned dates are targets, 
 
 ## Mandatory AI evidence gate
 
-Every C01–C24 implementation commit must add or update `docs/ai-evidence/commits/Cxx.md` using the scientific structure in `EVIDENCE_STANDARD.md` and `PROMPT_TEMPLATE.md`. The record must preserve the exact prompt, grounded inputs, constraints, output summary, failed attempts, verification results, corrections/rejections, and final human decision. Missing evidence blocks the commit from `Done` even when code builds.
+Every C01–C24 implementation commit must add or update `docs/ai-evidence/commits/Cxx.md` using the scientific structure in `EVIDENCE_STANDARD.md` and `PROMPT_TEMPLATE.md`. A short user command only selects the planned item; the AI agent must synthesize the full execution prompt from the roadmap and repository context before implementation. The record must preserve that exact synthesized prompt, grounded inputs, constraints, output summary, failed attempts, verification results, corrections/rejections, and final human decision. Missing evidence blocks the commit from `Done` even when code builds.
 
 ## Schedule
 

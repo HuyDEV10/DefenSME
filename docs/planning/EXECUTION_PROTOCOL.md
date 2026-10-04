@@ -20,11 +20,14 @@ If a specific ID is named, execute that ID only when its prerequisites are compl
 3. Select the first `Planned` item whose dependencies are complete.
 4. Treat its target date as guidance. Never skip it only because the date has passed or not arrived.
 5. Restate the selected ID, scope, acceptance checkpoint, and expected files before editing.
+6. Synthesize a complete scientific execution prompt from the selected plan item, PRD, architecture, current code, security boundaries, required outputs, and verification plan.
+7. Save that synthesized prompt in `docs/ai-evidence/commits/Cxx.md`; the user's short scheduling command is never used as the evidence prompt.
 
 ## During implementation
 
 - Keep the change atomic and within the selected planned item.
 - Create `docs/ai-evidence/commits/Cxx.md` from `PROMPT_TEMPLATE.md` for every planned commit; AI evidence is mandatory, not optional.
+- Execute the work against the synthesized Cxx prompt as a complete task specification; do not ask the user to restate duties already defined by the roadmap.
 - Preserve the exact prompt, material prompt revisions, AI output summary, corrections, rejected suggestions, verification commands/results, and final human decision.
 - Add or update migrations, tests, API documentation, and other evidence when applicable.
 - Preserve human-in-the-loop and no-autonomous-remediation boundaries.
