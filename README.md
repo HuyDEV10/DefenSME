@@ -11,7 +11,7 @@ DefenSME is an AI-assisted cybersecurity defense platform designed for small and
 - Incident workflow and audit history
 - Security dashboard and management reporting
 
-The initial codebase contains service boundaries and health checks. Product features will be implemented after the PRD is reviewed and approved.
+The initial codebase contains service boundaries and health checks. The reviewed course-MVP requirements are approved as an implementation-planning baseline in [`docs/prd/prd-v1.0.md`](docs/prd/prd-v1.0.md).
 
 ## Architecture
 
@@ -83,6 +83,7 @@ AI output is advisory. DefenSME must display uncertainty, preserve source eviden
 
 ## Documentation
 
-- `docs/prd/` - product requirements (next phase)
+- `docs/product/` - product brief, personas, assumptions, and open questions
+- `docs/prd/` - AI draft, human review, approved PRD, and traceability
 - `docs/architecture/` - architecture decisions and contracts
 - `docs/ai-evidence/` - prompts, reviews, and verification evidence for the course
