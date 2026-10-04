@@ -83,7 +83,12 @@ AI output is advisory. DefenSME must display uncertainty, preserve source eviden
 
 ## Documentation
 
+- `docs/planning/` - canonical 24-commit roadmap, execution protocol, progress tracker, and Definition of Done
 - `docs/product/` - product brief, personas, assumptions, and open questions
 - `docs/prd/` - AI draft, human review, approved PRD, and traceability
 - `docs/architecture/` - architecture decisions and contracts
 - `docs/ai-evidence/` - prompts, reviews, and verification evidence for the course
+
+## Continue the development plan
+
+The next implementation task is always identified in [`docs/planning/PROGRESS.md`](docs/planning/PROGRESS.md). Follow [`docs/planning/EXECUTION_PROTOCOL.md`](docs/planning/EXECUTION_PROTOCOL.md) when executing a scheduled commit. Target dates may move; actual dates and verified completion are recorded in the progress tracker.
