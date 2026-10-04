@@ -60,3 +60,15 @@
 | GOAL-01 | FR-DASH-001 | US-07 | AC-08 | Query and component tests |
 | GOAL-02 | FR-REPORT-001 | US-08 | AC-04 | Data-source and AI-labeling tests |
 
+## Implementation mapping
+
+| Requirement group | Architecture baseline | Backlog epic | Planned commits |
+|---|---|---|---|
+| FR-AUTH-001/002, SEC-001/002/003/006 | RBAC matrix; API authentication; User/Role ERD | E01 | C02–C03 |
+| FR-ASSET-001 | Asset ERD and `/assets` API | E02 | C04–C06 |
+| FR-ALERT-001–004 | Alert/evidence/history ERD and `/alerts` API | E03 | C07–C09 |
+| FR-AI-001–003, AI-001–007 | AI analysis/review ERD and API boundary | E04 | C10–C12 |
+| FR-INC-001 | Incident/action ERD and `/incidents` API | E05 | C13–C15 |
+| FR-DASH-001, FR-REPORT-001 | Dashboard/report endpoints | E06 | C16–C18 |
+| SEC-001–007, NFR-001–006 | Error contract, RBAC enforcement, indexes and audit rules | E07 | C19–C21 |
+| GOAL-01–04 | End-to-end architecture and Definition of Done | E08 | C22–C24 |

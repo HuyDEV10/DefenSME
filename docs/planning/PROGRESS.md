@@ -1,8 +1,10 @@
 # DefenSME development progress
 
 **Plan baseline:** 2026-10-04  
-**Overall status:** Ready to start implementation  
-**Next planned item:** C01  
+**Overall status:** C01 complete; implementation foundation ready
+
+**Next planned item:** C02
+
 **Target release:** 2026-11-30
 
 ## Status legend
@@ -17,7 +19,7 @@
 
 | ID | Target | Status | Actual date | Commit SHA / link | Verification | Deviation / blocker |
 |---|---|---|---|---|---|---|
-| C01 | 05/10 | Planned | — | — | — | — |
+| C01 | 05/10 | Done | 04/10 | Current C01 commit (`docs: add technical design, ERD and implementation backlog`) | ERD/API/RBAC/error/backlog cross-review; 24-item traceability preserved; Markdown and link checks passed | Completed one day early; no scope change |
 | C02 | 07/10 | Planned | — | — | — | — |
 | C03 | 10/10 | Planned | — | — | — | — |
 | C04 | 12/10 | Planned | — | — | — | — |
@@ -49,4 +51,3 @@ Record every approved reorder, split, merge, cancellation, or scope change here 
 | Date | Affected IDs | Change | Reason | Approved by |
 |---|---|---|---|---|
 | — | — | — | — | — |
-

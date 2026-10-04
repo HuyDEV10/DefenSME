@@ -24,6 +24,8 @@ The initial codebase contains service boundaries and health checks. The reviewed
 
 See [docs/architecture/overview.md](docs/architecture/overview.md) for design decisions.
 
+Implementation contracts are defined in the [ERD](docs/architecture/erd.md), [API overview](docs/architecture/api-overview.md), [error contract](docs/architecture/error-contract.md), and [RBAC matrix](docs/architecture/rbac-matrix.md).
+
 ## Quick start with Docker
 
 1. Copy `.env.example` to `.env`.

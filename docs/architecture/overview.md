@@ -1,5 +1,12 @@
 # Architecture overview
 
+Supporting implementation baselines:
+
+- [Logical ERD](erd.md)
+- [API overview](api-overview.md)
+- [API error contract](error-contract.md)
+- [RBAC matrix](rbac-matrix.md)
+
 ## Current decision
 
 DefenSME starts as a modular monolith for product logic, with a small separate AI service. This keeps authentication, authorization, transactions, and audit rules in one backend while isolating model-provider code and Python AI tooling.
