@@ -1,9 +1,9 @@
 # DefenSME development progress
 
 **Plan baseline:** 2026-10-04  
-**Overall status:** C01 complete; implementation foundation ready
+**Overall status:** C02 complete; identity schema ready for authentication
 
-**Next planned item:** C02
+**Next planned item:** C03
 
 **Target release:** 2026-11-30
 
@@ -20,7 +20,7 @@
 | ID | Target | Status | Actual date | Commit SHA / link | Verification | Deviation / blocker |
 |---|---|---|---|---|---|---|
 | C01 | 05/10 | Done | 04/10 | `be4b5fa` — `docs: add technical design, ERD and implementation backlog` | [Scientific AI evidence](../ai-evidence/commits/C01.md); ERD/API/RBAC/error/backlog cross-review; Markdown and link checks passed | Completed one day early; no scope change |
-| C02 | 07/10 | Planned | — | — | — | — |
+| C02 | 07/10 | Done | 12/10 | `C02` — `feat(backend): add identity, organization and core domain schema` | [Scientific AI evidence](../ai-evidence/commits/C02.md); PostgreSQL migration, default-role, domain and CI checks passed | Completed five days late; scope unchanged |
 | C03 | 10/10 | Planned | — | — | — | — |
 | C04 | 12/10 | Planned | — | — | — | — |
 | C05 | 14/10 | Planned | — | — | — | — |

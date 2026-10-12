@@ -5,7 +5,7 @@ Every `Cxx` row must link to a complete evidence file before the matching item c
 | Planned ID | Evidence | Status |
 |---|---|---|
 | C01 | [C01.md](C01.md) | Recorded |
-| C02 | `C02.md` | Required with C02 |
+| C02 | [C02.md](C02.md) | Complete |
 | C03 | `C03.md` | Required with C03 |
 | C04 | `C04.md` | Required with C04 |
 | C05 | `C05.md` | Required with C05 |
