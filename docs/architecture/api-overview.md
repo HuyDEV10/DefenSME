@@ -30,6 +30,16 @@ Spring Boot is the public API and authorization authority. The browser must not 
 | PATCH | `/users/{userId}/roles` | Replace approved application roles. | ADMIN |
 | PATCH | `/users/{userId}/status` | Activate or disable a user. | ADMIN |
 
+### Authentication contract
+
+- Login request: `organizationId`, `email`, and `password`. The organization identifier is required because email uniqueness is organization-scoped.
+- Login and refresh responses contain a `Bearer` access token, a one-time opaque refresh token, both expiry timestamps, and a password-free user summary.
+- Access tokens are HS256 JWTs with `sub`, `org`, `sid`, and `roles` claims. The signing secret is supplied through `AUTH_JWT_SECRET` and must contain at least 32 characters.
+- Refresh tokens are generated with a cryptographically secure random source; only their SHA-256 hashes are stored. Every refresh rotates the session and immediately invalidates the preceding access token.
+- Logout revokes the matching session. Disabled users cannot log in or refresh.
+- Authentication failure always returns `401 INVALID_CREDENTIALS` without distinguishing an unknown user, wrong password, or disabled account.
+- C03 exposes `GET /users` as an organization-scoped, password-free ADMIN read operation. User creation and role/status mutation remain future work.
+
 ## Assets
 
 | Method | Path | Purpose | Roles |
