@@ -70,6 +70,10 @@ public class UserAccount extends OrganizationScopedEntity {
         return lastLoginAt;
     }
 
+    public void recordSuccessfulLogin(Instant occurredAt) {
+        this.lastLoginAt = occurredAt;
+    }
+
     private static String normalizeEmail(String value) {
         return requireText(value, "email").toLowerCase(Locale.ROOT);
     }

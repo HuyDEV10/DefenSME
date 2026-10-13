@@ -34,6 +34,9 @@ services:
       DB_URL: jdbc:postgresql://postgres:5432/${POSTGRES_DB:-defensme}
       DB_USERNAME: ${POSTGRES_USER:-defensme}
       DB_PASSWORD: ${POSTGRES_PASSWORD:-defensme-local}
+      AUTH_JWT_SECRET: ${AUTH_JWT_SECRET:?Set AUTH_JWT_SECRET in your .env file}
+      AUTH_ACCESS_TOKEN_TTL: ${AUTH_ACCESS_TOKEN_TTL:-PT15M}
+      AUTH_REFRESH_TOKEN_TTL: ${AUTH_REFRESH_TOKEN_TTL:-P7D}
       AI_SERVICE_URL: http://ai-service:8000
       CORS_ALLOWED_ORIGINS: http://localhost:${FRONTEND_PORT:-5173}
     ports:
