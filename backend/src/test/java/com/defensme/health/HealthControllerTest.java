@@ -12,13 +12,14 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.FilterType;
 import org.springframework.test.web.servlet.MockMvc;
 import com.defensme.auth.api.AuthExceptionHandler;
+import com.defensme.asset.api.AssetExceptionHandler;
 
 @WebMvcTest(
         controllers = HealthController.class,
         properties = "app.auth.jwt-secret=test-secret-with-at-least-32-characters",
         excludeFilters = @ComponentScan.Filter(
                 type = FilterType.ASSIGNABLE_TYPE,
-                classes = AuthExceptionHandler.class
+                classes = {AuthExceptionHandler.class, AssetExceptionHandler.class}
         )
 )
 @AutoConfigureMockMvc(addFilters = false)
