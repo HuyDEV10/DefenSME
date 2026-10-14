@@ -33,12 +33,13 @@ class IdentitySchemaMigrationTest {
         MigrateResult migration = flyway.migrate();
 
         assertThat(migration.success).isTrue();
-        assertThat(migration.migrationsExecuted).isEqualTo(3);
+        assertThat(migration.migrationsExecuted).isEqualTo(4);
         assertThat(tableExists("organizations")).isTrue();
         assertThat(tableExists("users")).isTrue();
         assertThat(tableExists("roles")).isTrue();
         assertThat(tableExists("user_roles")).isTrue();
         assertThat(tableExists("auth_sessions")).isTrue();
+        assertThat(tableExists("assets")).isTrue();
         assertThat(roleCodes()).containsExactly("ADMIN", "ANALYST", "IT_MANAGER", "VIEWER");
     }
 

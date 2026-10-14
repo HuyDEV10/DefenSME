@@ -50,6 +50,17 @@ Spring Boot is the public API and authorization authority. The browser must not 
 | PUT | `/assets/{assetId}` | Update mutable asset fields. | IT_MANAGER, ANALYST |
 | POST | `/assets/{assetId}/archive` | Archive an asset without deleting history. | IT_MANAGER |
 
+### Asset contract
+
+- Request fields are `name`, `type`, `identifier`, `criticality`, optional `ownerUserId`, and optional `metadata`; updates also require `status`.
+- `type` is one of `SERVER`, `WORKSTATION`, `NETWORK_DEVICE`, `APPLICATION`, `CLOUD_SERVICE`, `DATABASE`, or `OTHER`. `criticality` is `LOW`, `MEDIUM`, `HIGH`, or `CRITICAL`.
+- New assets start in `ACTIVE`. A normal update may select `ACTIVE` or `INACTIVE`; `ARCHIVED` is only reached through the archive action.
+- `GET /assets` supports case-insensitive `search` over name and identifier plus exact `type`, `criticality`, and `status` filters. Results sort by name and then identifier-independent UUID order, with `page=0`, `size=20`, and maximum `size=100`.
+- An active identifier is unique case-insensitively within the same organization and type. Archiving preserves history and permits that identifier to be reused by a replacement asset.
+- `ownerUserId`, when supplied, must identify a user in the authenticated organization. Every lookup and mutation resolves both organization and asset ID; a foreign-organization ID returns the same `404 RESOURCE_NOT_FOUND` response as an unknown ID.
+- `metadata` is a JSON object limited to 25 top-level entries. Asset responses include organization, status, owner, metadata, archive time, and creation/update timestamps.
+- Archive is idempotent and restricted to `IT_MANAGER`. This follows the detailed RBAC matrix; the broader FR-ASSET-001 wording that also mentions ANALYST archive remains a requirements discrepancy for later reconciliation.
+
 ## Alerts
 
 | Method | Path | Purpose | Roles |
