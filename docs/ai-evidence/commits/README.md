@@ -8,7 +8,7 @@ Every `Cxx` row must link to a complete evidence file before the matching item c
 | C02 | [C02.md](C02.md) | Complete |
 | C03 | [C03.md](C03.md) | Complete |
 | C04 | [C04.md](C04.md) | Complete |
-| C05 | `C05.md` | Required with C05 |
+| C05 | [C05.md](C05.md) | Complete |
 | C06 | `C06.md` | Required with C06 |
 | C07 | `C07.md` | Required with C07 |
 | C08 | `C08.md` | Required with C08 |
