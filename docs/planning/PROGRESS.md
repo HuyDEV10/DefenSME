@@ -1,9 +1,9 @@
 # DefenSME development progress
 
 **Plan baseline:** 2026-10-04  
-**Overall status:** C04 complete; tenant-scoped asset backend ready for frontend work
+**Overall status:** C05 in progress; asset management UI implemented and awaiting CI verification
 
-**Next planned item:** C05
+**Next planned item:** C05 verification, then C06
 
 **Target release:** 2026-11-30
 
@@ -23,7 +23,7 @@
 | C02 | 07/10 | Done | 12/10 | `C02` — `feat(backend): add identity, organization and core domain schema` | [Scientific AI evidence](../ai-evidence/commits/C02.md); PostgreSQL migration, default-role, domain and CI checks passed | Completed five days late; scope unchanged |
 | C03 | 10/10 | Done | 13/10 | `C03` — `feat(auth): implement authentication and role authorization` | [Scientific AI evidence](../ai-evidence/commits/C03.md); Argon2id, JWT/session rotation, tenant/RBAC integration tests and CI passed | Completed three days late; scope unchanged |
 | C04 | 12/10 | Done | 14/10 | [PR #2](https://github.com/HuyDEV10/DefenSME/pull/2) — `feat(asset): implement asset domain and REST API` | [Scientific AI evidence](../ai-evidence/commits/C04.md); Flyway V1→V4, 13 backend tests, tenant/RBAC integration tests, and all CI jobs passed | Completed two days late; scope unchanged |
-| C05 | 14/10 | Planned | — | — | — | — |
+| C05 | 14/10 | In progress | 16/10 | Pending | [Scientific AI evidence](../ai-evidence/commits/C05.md); frontend lint/build passed locally; full CI pending | Two days late; scope unchanged |
 | C06 | 17/10 | Planned | — | — | — | — |
 | C07 | 19/10 | Planned | — | — | — | — |
 | C08 | 21/10 | Planned | — | — | — | — |
